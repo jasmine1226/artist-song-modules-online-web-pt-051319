@@ -4,8 +4,8 @@ require_relative '../lib/concerns/findable.rb'
 require_relative '../lib/concerns/paramable.rb'
 
 class Artist
-  extend Memorable, Findable
-  include Paramable
+  extend Memorable::ClassModules, Findable
+  include Memorable::InstanceModules, Paramable
 
   attr_accessor :name
   attr_reader :songs
