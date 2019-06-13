@@ -7,7 +7,7 @@ module Memorable
       self.all.count
     end
   end
-  
+
   module InstanceModules
     def initialize
       self.class.all << self
